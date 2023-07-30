@@ -26,6 +26,13 @@ declare namespace API {
     message: string
   };
 
+  type UserListResult = {
+    code: number;
+    data: CurrentUser[],
+    description: string,
+    message: string
+  };
+
   type PageParams = {
     current?: number;
     pageSize?: number;

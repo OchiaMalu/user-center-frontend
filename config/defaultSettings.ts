@@ -1,4 +1,4 @@
-import { Settings as LayoutSettings } from '@ant-design/pro-components';
+import {Settings as LayoutSettings} from '@ant-design/pro-components';
 
 const Settings: LayoutSettings & {
   pwa?: boolean;
@@ -12,10 +12,10 @@ const Settings: LayoutSettings & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'Ant Design Pro',
+  title: '用户中心',
   pwa: false,
-  logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
-  iconfontUrl: '',
+  logo: "https://niu.ochiamalu.xyz/super-dark.ico",
+  iconfontUrl: 'https://niu.ochiamalu.xyz/super-dark.ico',
 };
 
 export default Settings;

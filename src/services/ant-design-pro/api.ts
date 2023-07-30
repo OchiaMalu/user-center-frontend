@@ -34,7 +34,18 @@ export async function login(body: API.LoginParams, options?: { [key: string]: an
 
 /** 此处后端没有提供注释 GET /api/notices */
 export async function getNotices(options?: { [key: string]: any }) {
-  return request<API.NoticeIconList>('/api/notices', {
+  return request<API.CurrentUser[]>('/api/notices', {
+    method: 'GET',
+    ...(options || {}),
+  });
+}
+
+/**
+ * 获取用户列表
+ * @param options
+ */
+export async function getUserList(options?: { [key: string]: any }) {
+  return request<API.NoticeIconList>('/api/user/search', {
     method: 'GET',
     ...(options || {}),
   });
